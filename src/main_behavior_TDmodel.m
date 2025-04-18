@@ -48,4 +48,4 @@ end
 %% Plot results
 
 plotTDsimulation(modelITI, modelITI_all, modelValue, ratTrial.block);
-
+plotTDRPE_vs_DA(ratTrial, RPE, AUC_rew, AUC_block)
