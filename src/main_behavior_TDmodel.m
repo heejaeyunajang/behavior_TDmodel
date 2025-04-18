@@ -10,7 +10,7 @@ datadir = fullfile(gitdir, 'behavior_TDmodel', 'data');
 ratname = 'J032';
 datafile = fullfile(datadir, sprintf('ratTrial_%s.mat', ratname));
 
-%%
+%% Load behavior and dopamine data
 % Load behavior data of an example rat to simulate with (struct that
 % concatenates all behavior sessions)
 load(datafile, 'A');
@@ -19,10 +19,13 @@ ratTrial = A;
 % Preprocess trial initiation time (removes outliers)
 ratTrial.ITI = preprocessITI(ratTrial);
 
-% Run TD model simulation
+% Load dopamine data
+
+
+%% Run TD model simulation
 % modelITI and modelValue excludes violation trials, and modelITI_all includes
 % violation trials
-[modelITI, modelValue, modelITI_all] = simulateTD(ratTrial);
+[modelITI, modelITI_all, modelValue, RPE] = simulateTD(ratTrial);
 
 %% Plot results
 
