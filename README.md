@@ -43,9 +43,18 @@ The following outputs can be reproduced using scripts in `src/plotting/`:
 
 ## 🚀 Getting Started
 
-```matlab
-% Clone the repo and set up your path
-addpath(genpath('path/to/temporalbandit_TDmodel/src'))
+### 1. Clone this repository and also the shared utilities repo
 
-% Run full simulation and generate figure panels
-main_behavior_TDmodel
+```bash
+git clone https://github.com/heejaeyunajang/temporalbandit_TDmodel.git
+git clone https://github.com/heejaeyunajang/utils_core.git
+```
+
+### 2. Add all folders to your MATLAB path
+```matlab
+addpath(genpath('temporalbandit_TDmodel/src'))
+addpath(genpath('utils_core'))
+```
+
+### 4. Run the main script
+main_temporalbandit_TDmodel
