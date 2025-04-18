@@ -7,15 +7,15 @@ The code supports simulations and figure generation for model outputs and their 
 ---
 
 ## 📂 Repository Structure
-
+```
 src/
 ├── modeling/ % Core TD model and ITI generation
 ├── preprocessing/ % Trial data cleaning and formatting
 ├── analysis/ % dopamine data analysis
 ├── plotting/ % plotting functions
 └── main/ % Entrypoint scripts for running model or pipeline
-
-
+utils/ % Helper functions
+```
 ---
 
 ## 📄 Key Scripts
