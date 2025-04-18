@@ -14,7 +14,7 @@ event = parseEvent(event);
 
 pdata = pstruct.(event);
 bdata = bstruct.(event);
-p_block = getFlByVol(pdata, bdata, block);
+p_block = getFlByRewVol(pdata, bdata, block, true);
 p_block_vol = p_block{reward};
 
 T = linspace(-5, 10, size(pdata, 2));
