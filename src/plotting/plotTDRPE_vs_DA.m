@@ -2,9 +2,9 @@ function plotTDRPE_vs_DA(ratTrial, RPE, AUC_rew, AUC_block)
 
 % plotting colors
 % from small to big volumes
-cl.reward = {'#bb7af7', '#9a5bd0', '#793cab', '#591e86', '#390061'};
+cl.reward = getcolors('volume');
 % low, mixed, high order
-cl.block = {'b','#9933FF','r'}; 
+cl.block = getcolors('block');
 
 figure;
 tiledlayout(1, 4, 'Padding', 'compact');
